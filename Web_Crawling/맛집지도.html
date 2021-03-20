@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a5cbb08eceda4a6c967fcb04866c869d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    <h3 align="center" style="font-size:20px"><b>산격동 맛집 - 맛집추천</b></h3>
+    
+            <div class="folium-map" id="map_a5cbb08eceda4a6c967fcb04866c869d" ></div>
+        
+</body>
+<script>    
+    
+            var map_a5cbb08eceda4a6c967fcb04866c869d = L.map(
+                "map_a5cbb08eceda4a6c967fcb04866c869d",
+                {
+                    center: [35.89531411017114, 128.60927974281876],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 16,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a450a6597d9c4ea9803eb99ae55819ef = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_a5cbb08eceda4a6c967fcb04866c869d);
+        
+    
+            var circle_f346b3415d624eaea5b0a5dc52cc0c2a = L.circle(
+                [35.89467845883139, 128.610487146592],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_a5cbb08eceda4a6c967fcb04866c869d);
+        
+    
+        var popup_269d6ad1cce7425dbda76cba22536bfd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_39a1505f5b4044b99e78d4ce1b67d23f = $(`<div id="html_39a1505f5b4044b99e78d4ce1b67d23f" style="width: 100.0%; height: 100.0%;">반짝반짝빛나는</div>`)[0];
+            popup_269d6ad1cce7425dbda76cba22536bfd.setContent(html_39a1505f5b4044b99e78d4ce1b67d23f);
+        
+
+        circle_f346b3415d624eaea5b0a5dc52cc0c2a.bindPopup(popup_269d6ad1cce7425dbda76cba22536bfd)
+        ;
+
+        
+    
+    
+            circle_f346b3415d624eaea5b0a5dc52cc0c2a.bindTooltip(
+                `<div>
+                     단호박퓨레 타르트, 밀크티
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_56644b4b3e734fc39fb284e8ef053022 = L.circle(
+                [35.8926307381211, 128.609087257873],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_a5cbb08eceda4a6c967fcb04866c869d);
+        
+    
+        var popup_65087fea8c2046f68c641d117e377a7b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_474569f692334315941a407f1363ade3 = $(`<div id="html_474569f692334315941a407f1363ade3" style="width: 100.0%; height: 100.0%;">인도방랑기</div>`)[0];
+            popup_65087fea8c2046f68c641d117e377a7b.setContent(html_474569f692334315941a407f1363ade3);
+        
+
+        circle_56644b4b3e734fc39fb284e8ef053022.bindPopup(popup_65087fea8c2046f68c641d117e377a7b)
+        ;
+
+        
+    
+    
+            circle_56644b4b3e734fc39fb284e8ef053022.bindTooltip(
+                `<div>
+                     탄두리치킨, 커리, 세트메뉴
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_44b9f0f5a5d24c8bb35de55a9fe65d38 = L.circle(
+                [35.8917088662591, 128.607325039905],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_a5cbb08eceda4a6c967fcb04866c869d);
+        
+    
+        var popup_e2424f3dd3db47739f629e6615404cec = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9307bef3948a4b8087987f2fc0be32b5 = $(`<div id="html_9307bef3948a4b8087987f2fc0be32b5" style="width: 100.0%; height: 100.0%;">ZZIM</div>`)[0];
+            popup_e2424f3dd3db47739f629e6615404cec.setContent(html_9307bef3948a4b8087987f2fc0be32b5);
+        
+
+        circle_44b9f0f5a5d24c8bb35de55a9fe65d38.bindPopup(popup_e2424f3dd3db47739f629e6615404cec)
+        ;
+
+        
+    
+    
+            circle_44b9f0f5a5d24c8bb35de55a9fe65d38.bindTooltip(
+                `<div>
+                     한마리, 가든샐러드
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_c6d302b19b904821abf949b23189ef77 = L.circle(
+                [35.8940016626727, 128.610080392585],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_a5cbb08eceda4a6c967fcb04866c869d);
+        
+    
+        var popup_bf1a8cec22314a0985145591c835cbca = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fa5cd1591f7243d3a3e635c8af9bb90d = $(`<div id="html_fa5cd1591f7243d3a3e635c8af9bb90d" style="width: 100.0%; height: 100.0%;">홍대함바그</div>`)[0];
+            popup_bf1a8cec22314a0985145591c835cbca.setContent(html_fa5cd1591f7243d3a3e635c8af9bb90d);
+        
+
+        circle_c6d302b19b904821abf949b23189ef77.bindPopup(popup_bf1a8cec22314a0985145591c835cbca)
+        ;
+
+        
+    
+    
+            circle_c6d302b19b904821abf949b23189ef77.bindTooltip(
+                `<div>
+                     매콤함바그, 달콤함바그, 매콤갈비, 달콤갈비
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_5042f08b2bbc4fa799bcff00f25b48a0 = L.circle(
+                [35.893573878760705, 128.609550442631],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_a5cbb08eceda4a6c967fcb04866c869d);
+        
+    
+        var popup_ecf8f35f40184a798997e9a55ae031b8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d6f26324cac04879bcb96790796f1188 = $(`<div id="html_d6f26324cac04879bcb96790796f1188" style="width: 100.0%; height: 100.0%;">밥하는남자</div>`)[0];
+            popup_ecf8f35f40184a798997e9a55ae031b8.setContent(html_d6f26324cac04879bcb96790796f1188);
+        
+
+        circle_5042f08b2bbc4fa799bcff00f25b48a0.bindPopup(popup_ecf8f35f40184a798997e9a55ae031b8)
+        ;
+
+        
+    
+    
+            circle_5042f08b2bbc4fa799bcff00f25b48a0.bindTooltip(
+                `<div>
+                     상하이누룽지, 통낙지라이스, 돈카츠샐러드
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_bbf508b16ed447be8f3a499cf274a470 = L.circle(
+                [35.8918064813229, 128.607525356882],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_a5cbb08eceda4a6c967fcb04866c869d);
+        
+    
+        var popup_49b06a999c294acb88075224799ef9cf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_167616b5885b43ef84db91568874042a = $(`<div id="html_167616b5885b43ef84db91568874042a" style="width: 100.0%; height: 100.0%;">포베트21</div>`)[0];
+            popup_49b06a999c294acb88075224799ef9cf.setContent(html_167616b5885b43ef84db91568874042a);
+        
+
+        circle_bbf508b16ed447be8f3a499cf274a470.bindPopup(popup_49b06a999c294acb88075224799ef9cf)
+        ;
+
+        
+    
+    
+            circle_bbf508b16ed447be8f3a499cf274a470.bindTooltip(
+                `<div>
+                     양지 쇠고기 쌀국수, 세트(월남쌈+양지or해물쌀국수2개), 반세오, 월남쌈, 카오팟 타이식볶음밥
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_3ecd45344e3a41dab4cdf4d625f80efc = L.circle(
+                [35.907770466325005, 128.605553731961],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_a5cbb08eceda4a6c967fcb04866c869d);
+        
+    
+        var popup_1ed608a2952f4c78a2742c8c232d7e89 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7a86a3f388194704b3ac5e0078529529 = $(`<div id="html_7a86a3f388194704b3ac5e0078529529" style="width: 100.0%; height: 100.0%;">봉봉해물탕</div>`)[0];
+            popup_1ed608a2952f4c78a2742c8c232d7e89.setContent(html_7a86a3f388194704b3ac5e0078529529);
+        
+
+        circle_3ecd45344e3a41dab4cdf4d625f80efc.bindPopup(popup_1ed608a2952f4c78a2742c8c232d7e89)
+        ;
+
+        
+    
+    
+            circle_3ecd45344e3a41dab4cdf4d625f80efc.bindTooltip(
+                `<div>
+                     해물탕
+, 해물찜
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_167aff0a13394b71ba2f7f837425a371 = L.circle(
+                [35.8930297852758, 128.608675274061],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_a5cbb08eceda4a6c967fcb04866c869d);
+        
+    
+        var popup_1f9cd501f46c49379b1a0d87ec962fde = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ce8411c93c5a427ca38347d23cb103e1 = $(`<div id="html_ce8411c93c5a427ca38347d23cb103e1" style="width: 100.0%; height: 100.0%;">72번가</div>`)[0];
+            popup_1f9cd501f46c49379b1a0d87ec962fde.setContent(html_ce8411c93c5a427ca38347d23cb103e1);
+        
+
+        circle_167aff0a13394b71ba2f7f837425a371.bindPopup(popup_1f9cd501f46c49379b1a0d87ec962fde)
+        ;
+
+        
+    
+    
+            circle_167aff0a13394b71ba2f7f837425a371.bindTooltip(
+                `<div>
+                     준벅, 카우보이정식, 코스모 폴리탄, 프렌치 키스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_f7de4de65f1947ce9229b4b572a4508a = L.circle(
+                [35.894059533014705, 128.610663654294],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_a5cbb08eceda4a6c967fcb04866c869d);
+        
+    
+        var popup_e3cb2e484a384d439ad984668b29a3a3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_619dd005a4de4cc5906471bc31276c55 = $(`<div id="html_619dd005a4de4cc5906471bc31276c55" style="width: 100.0%; height: 100.0%;">META PIZZA</div>`)[0];
+            popup_e3cb2e484a384d439ad984668b29a3a3.setContent(html_619dd005a4de4cc5906471bc31276c55);
+        
+
+        circle_f7de4de65f1947ce9229b4b572a4508a.bindPopup(popup_e3cb2e484a384d439ad984668b29a3a3)
+        ;
+
+        
+    
+    
+            circle_f7de4de65f1947ce9229b4b572a4508a.bindTooltip(
+                `<div>
+                     미트디럭스피자, 쉬림프토파토 파스타, 로제, 프리마베라 피자, 쉬림프크림 파스타
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_b4d2101af2854aee91690e03aa42850e = L.circle(
+                [35.9033967414569, 128.613013704846],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_a5cbb08eceda4a6c967fcb04866c869d);
+        
+    
+        var popup_2fb337e495134f1886ed20ec0d05432b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_63799ad73899445f919eb37bdede2685 = $(`<div id="html_63799ad73899445f919eb37bdede2685" style="width: 100.0%; height: 100.0%;">모모야스시 참치</div>`)[0];
+            popup_2fb337e495134f1886ed20ec0d05432b.setContent(html_63799ad73899445f919eb37bdede2685);
+        
+
+        circle_b4d2101af2854aee91690e03aa42850e.bindPopup(popup_2fb337e495134f1886ed20ec0d05432b)
+        ;
+
+        
+    
+    
+            circle_b4d2101af2854aee91690e03aa42850e.bindTooltip(
+                `<div>
+                     모듬 스시 11P, 특스시 13P, 모모야스시 11P, 참치메뉴, 광어추가회
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_32bd8bceb3a14a46b7543f596b881c40 = L.circle(
+                [35.8924521713508, 128.60831086209],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_a5cbb08eceda4a6c967fcb04866c869d);
+        
+    
+        var popup_337a3eb6d68b4f16bea55b68afc10f20 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_973fc6c8fa924ef7bef170dfe57a9eb6 = $(`<div id="html_973fc6c8fa924ef7bef170dfe57a9eb6" style="width: 100.0%; height: 100.0%;">1905몬스터피자</div>`)[0];
+            popup_337a3eb6d68b4f16bea55b68afc10f20.setContent(html_973fc6c8fa924ef7bef170dfe57a9eb6);
+        
+
+        circle_32bd8bceb3a14a46b7543f596b881c40.bindPopup(popup_337a3eb6d68b4f16bea55b68afc10f20)
+        ;
+
+        
+    
+    
+            circle_32bd8bceb3a14a46b7543f596b881c40.bindTooltip(
+                `<div>
+                     오리지날치즈 피자/페퍼로니 피자/베이컨체다 피자, 콤비네이션 피자/케이준치킨 피자/불고기 피자/핫스파이시치킨 피자, 베이컨포테이토 피자/갈릭쉬림프 피자/스위트고구마 피자/직화스테이크 피자, 오리지날치킨, 간장치킨
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_35ceb1c5f9b248c2b059f0fe73415f6e = L.circle(
+                [35.8946605386626, 128.611084050105],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_a5cbb08eceda4a6c967fcb04866c869d);
+        
+    
+        var popup_9cce7b7219df47458d1ec89df4cfbc08 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_80cfb8e1f93c49b7a13eeb164e2fc885 = $(`<div id="html_80cfb8e1f93c49b7a13eeb164e2fc885" style="width: 100.0%; height: 100.0%;">반미리코</div>`)[0];
+            popup_9cce7b7219df47458d1ec89df4cfbc08.setContent(html_80cfb8e1f93c49b7a13eeb164e2fc885);
+        
+
+        circle_35ceb1c5f9b248c2b059f0fe73415f6e.bindPopup(popup_9cce7b7219df47458d1ec89df4cfbc08)
+        ;
+
+        
+    
+    
+            circle_35ceb1c5f9b248c2b059f0fe73415f6e.bindTooltip(
+                `<div>
+                     돼지고기/닭고기/어묵 반미, 소고기 치즈 반미, 쌀국수, 팟타이, 분보싸오
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
