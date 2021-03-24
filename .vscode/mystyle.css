@@ -1,0 +1,7 @@
+ul strong{
+    color : dodgerblue;
+}
+div > strong{
+    background: yellow;
+}
+
